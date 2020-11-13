@@ -17,13 +17,18 @@ is coming soon.
 Novakkad can be used with the `nova` command. A reference can be printed to the terminal with `nova help`.
 
 To scan and process a document, use the `scan` mode like so:
+
 ```nova scan```
+
 The output filename defaults to `out.md`, but can be manually set:
+
 ```nova scan file.md```
 
 To proccess from an image, use the `image` mode like so:
+
 ```nova image image.png```
 The image mode can also take a custom filename:
+
 ```nova image image.png file.md```
 
 ## How does it work?
