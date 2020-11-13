@@ -61,7 +61,7 @@ if imageSrc == "":
 
 # Create character whitelist
 writeFile(temp / "chars", """
-tessedit_char_whitelist ' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,?'-\\/!:;+"'
+tessedit_char_whitelist ' ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz.,?'-\\/!:;+"()'
 """)
 
 # Perform OCR
