@@ -92,10 +92,10 @@ for i in html.findAll("span"):
         var text = x.innerText.replace(" ", "")
         if text != "":
           let confidence = parseInt(x.attr("title").split(" ")[^1])
-          if confidence >= 20 or text.toLower() in ["is", "the", "a", "i", "or", "but"]:
+          if confidence >= 5 or text.toLower() in ["is", "the", "a", "i", "or", "but"]:
             
             # If confidence is below a threshold, make some assumptions about what it's really meant to be
-            if confidence <= 80:
+            if confidence <= 90:
               text = text.replace(",", ".")
               text = text.replace("..", ".")
             
